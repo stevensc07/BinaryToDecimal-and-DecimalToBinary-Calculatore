@@ -11,7 +11,13 @@ class W1 extends StatelessWidget {
             color: Colors.blueGrey,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [Text("Widget 1"), OneRow()],
+              children: [
+                Text("Widget 1",
+                    style: TextStyle(
+                      color: Colors.white,
+                    )),
+                OneRow()
+              ],
             )));
   }
 }
@@ -39,7 +45,10 @@ class P2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<SingleModel>(
       builder: (context, model, child) {
-        return Text('${model.get_some_value}');
+        return Text('${model.get_some_value}',
+            style: TextStyle(
+              color: Colors.white,
+            ));
       },
     );
   }
@@ -56,7 +65,7 @@ class P1 extends StatelessWidget {
       builder: (context, model, child) {
         return FlatButton(
           color: Theme.of(context).accentColor,
-          child: Text('Click',
+          child: Text('Click Me',
               style: TextStyle(
                 color: Colors.white,
               )),
