@@ -17,7 +17,7 @@ class _BinToDecState extends State<BinToDec> {
       create: (context) => SingleModel(),
       child: Container(
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.fromLTRB(16, 0, 16, 0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
@@ -31,7 +31,7 @@ class _BinToDecState extends State<BinToDec> {
                 ),
               ),
               Container(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
                 alignment: Alignment.centerRight,
                 child: Text(
                   '$_binary',
@@ -112,9 +112,9 @@ class _BinToDecState extends State<BinToDec> {
                         child: Padding(
                           padding: const EdgeInsets.fromLTRB(0, 12, 0, 12),
                           child: Text(
-                            "Reset all",
+                            "Clear",
                             style: new TextStyle(
-                              fontSize: 20.0,
+                              fontSize: 16,
                               color: Colors.white,
                             ),
                           ),
@@ -148,7 +148,7 @@ class _BinToDecState extends State<BinToDec> {
                           child: Text(
                             "Delete last",
                             style: new TextStyle(
-                              fontSize: 20.0,
+                              fontSize: 16,
                               color: Colors.white,
                             ),
                           ),

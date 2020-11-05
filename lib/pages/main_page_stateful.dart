@@ -38,11 +38,14 @@ class _MainPageStatefulState extends State<MainPageStateful> {
               FlatButton(
                 color: Colors.blueGrey[800],
                 onPressed: () => _onPressed(),
-                child: Text(
-                  'Change',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 12, 0, 12),
+                  child: Text(
+                    'Change',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                    ),
                   ),
                 ),
               ),
